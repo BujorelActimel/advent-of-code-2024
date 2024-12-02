@@ -11,7 +11,7 @@ import (
 )
 
 func FirstPuzzle() int {
-	file, err := os.Open("day1/input1.txt")
+	file, err := os.Open("day1/input.txt")
 
 	if err != nil {
 		fmt.Println("Error: ", err)
@@ -57,7 +57,7 @@ func FirstPuzzle() int {
 }
 
 func SecondPuzzle() int {
-	file, err := os.Open("day1/input2.txt")
+	file, err := os.Open("day1/input.txt")
 
 	if err != nil {
 		fmt.Println("Error: ", err)

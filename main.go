@@ -2,10 +2,24 @@ package main
 
 import (
 	"aoc-2024/day1"
+	"aoc-2024/day2"
 	"fmt"
+	"os"
 )
 
 func main() {
-	fmt.Println(day1.FirstPuzzle())
-	fmt.Println(day1.SecondPuzzle())
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: go run main.go [day]")
+		os.Exit(1)
+	}
+	switch os.Args[1] {
+	case "1":
+		fmt.Println(day1.FirstPuzzle())
+		fmt.Println(day1.SecondPuzzle())
+	case "2":
+		fmt.Println(day2.FirstPuzzle())
+		fmt.Println(day2.SecondPuzzle())
+	default:
+		fmt.Println("Unknown argument:", os.Args[1])
+	}
 }
