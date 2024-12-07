@@ -37,7 +37,7 @@ func main() {
 		fmt.Println(day6.FirstPuzzle())
 		fmt.Println(day6.SecondPuzzle())
 	case "7":
-		// fmt.Println(day7.FirstPuzzle())
+		fmt.Println(day7.FirstPuzzle())
 		fmt.Println(day7.SecondPuzzle())
 	default:
 		fmt.Println("Unknown argument:", os.Args[1])
