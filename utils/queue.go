@@ -25,3 +25,7 @@ func (q *Queue[T]) Pop() (T, error) {
 func (q *Queue[T]) IsEmpty() bool {
 	return len(q.items) == 0
 }
+
+func (q *Queue[T]) Size() int {
+	return len(q.items)
+}
