@@ -24,3 +24,11 @@ func (s *Set[T]) Contains(item T) bool {
 func (s *Set[T]) Size() int {
 	return len(s.items)
 }
+
+func (s *Set[T]) Values() []T {
+	var values []T
+	for key := range s.items {
+		values = append(values, key)
+	}
+	return values
+}
