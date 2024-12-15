@@ -6,6 +6,7 @@ import (
 	"aoc-2024/day11"
 	"aoc-2024/day12"
 	"aoc-2024/day13"
+	"aoc-2024/day14"
 	"aoc-2024/day2"
 	"aoc-2024/day3"
 	"aoc-2024/day4"
@@ -63,6 +64,9 @@ func main() {
 	case "13":
 		fmt.Println(day13.FirstPuzzle())
 		fmt.Println(day13.SecondPuzzle())
+	case "14":
+		fmt.Println(day14.FirstPuzzle())
+		fmt.Println(day14.SecondPuzzle())
 	default:
 		fmt.Println("Unknown argument:", os.Args[1])
 	}
